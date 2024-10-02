@@ -3,8 +3,9 @@
 {
   imports = [
     ./firefox.nix
+    ./gnome.nix
   ];
-  
+
   # Define a user account. Don't forget to set a password with ‘passwd’.
   home.username = "toto";
   home.homeDirectory = "/home/toto";

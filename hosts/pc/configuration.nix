@@ -9,6 +9,8 @@
     ./packages.nix
     ./filesystem.nix
     ./misc.nix
+    ./games/steam.nix
+    ./games/bottles.nix
   ];
 
   # Use the systemd-boot EFI boot loader.
@@ -62,6 +64,7 @@
 
   # Some hardware flags
   hardware.graphics.enable = true;
+  hardware.graphics.enable32Bit = true;
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.

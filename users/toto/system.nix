@@ -1,4 +1,4 @@
-{ config, pkgs, home-manager, ... }:
+{ config, lib, pkgs, home-manager, ... }:
 
 {
   users.users.toto = {
