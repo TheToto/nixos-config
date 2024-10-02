@@ -14,7 +14,7 @@
   outputs = { nixpkgs, disko, home-manager, ... }@inputs:
   {
     # Home PC
-    nixosConfigurations.bender = nixpkgs.lib.nixosSystem {
+    nixosConfigurations.pc = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       modules = [
         ./hosts/pc/configuration.nix
@@ -39,7 +39,7 @@
     };
 
     # Main VPS
-    nixosConfigurations.farnsworth = nixpkgs.lib.nixosSystem {
+    nixosConfigurations.vps = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       modules = [
         disko.nixosModules.disko
