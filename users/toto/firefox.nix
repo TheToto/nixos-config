@@ -11,7 +11,7 @@
   programs.firefox = {
     enable = true;
     profiles.default = {
-      # Most parameters will be synced with Firefox Sync
+      # Other parameters like extensions will be synced with Firefox Sync
       # Sidebery settings must be loaded manually from the json in chrome directory
       name = "Default";
       settings = {

@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-./hardware-config.sh
+bash hardware-config.sh
 
 sudo nixos-install \
   --flake .#$1 \

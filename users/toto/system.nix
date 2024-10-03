@@ -3,6 +3,6 @@
 {
   users.users.toto = {
     isNormalUser = true;
-    extraGroups = [ "wheel" ]; # Enable ‘sudo’ for the user.
+    extraGroups = [ "wheel" "docker" ];
   };
 }
